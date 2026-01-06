@@ -1,0 +1,139 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+  
+  main {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  main .left,
+  main .right {
+    height: 100%;
+    flex-basis: 50%;
+    border-radius: 0.7rem;
+    border: 2px solid #e0e0e0;         /* Add border */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Subtle shadow for depth */
+    background: #181818;                /* Slightly lighter than black for left */
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s;
+  }
+  
+  main .left {
+    background-color: #181818;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .left .code,
+  .code pre,
+  .code pre code {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0.6rem;
+    background-color: #23272f;
+    border: 1px solid #333;
+  }
+  
+  main .left .review {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    background-color: #646cff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.6rem;
+    border: none;
+    box-shadow: 0 2px 6px rgba(100,108,255,0.1);
+    transition: background 0.2s, color 0.2s;
+  }
+  main .left .review:hover {
+    background-color: #535bf2;
+    color: #fff;
+  }
+  
+  main .right {
+    background-color: #23272f;
+    padding: 1.5rem 2rem;
+    font-size: 1.1rem;
+    overflow: auto;
+    color: #f1f1f1;
+    border: 2px solid #e0e0e0;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  
+  main .right h1,
+  main .right h2,
+  main .right h3 {
+    color: #4fc3f7; /* Soft blue for headings */
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+  
+  main .right strong {
+    color: #ffb74d; /* Orange for emphasis */
+    font-weight: 600;
+  }
+  
+  main .right em {
+    color: #81c784; /* Green for italic/emphasized text */
+  }
+  
+  main .right pre,
+  main .right code {
+    background: #181b20;
+    color: #e0e0e0; /* Light gray for code text */
+    border-radius: 0.4rem;
+    padding: 0.3em 0.6em;
+    font-size: 1em;
+    overflow-x: auto;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+    border: 1px solid #33384d;
+  }
+  
+  main .right a {
+    color: #f06292; /* Pink for links */
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+  main .right a:hover {
+    color: #ffb74d; /* Orange on hover */
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+    main .left,
+    main .right {
+      flex-basis: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* npm  i prismjs 
+  npm i react-simple-code-editors
+  npm i axios - to communicate frontend with backend
+  npm i cors   - to abllow backend to accept requests from frontend and share resources  - run on backend terminal
+  frontend - npm i react-markdown
+  */
