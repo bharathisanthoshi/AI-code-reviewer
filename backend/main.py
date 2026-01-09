@@ -5,7 +5,8 @@ from llm_review import review_code
 
 app = FastAPI(title="AI Code Reviewer")
 origins = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://ai-code-reviewer-kappa-jet.vercel.app/"
 ]
 
 app.add_middleware(
