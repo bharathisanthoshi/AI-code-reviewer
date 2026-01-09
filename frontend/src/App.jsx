@@ -11,7 +11,7 @@ import 'highlight.js/styles/github.css'; // Import a highlight.js theme
 function App() {
   const [count, setCount] = useState(0)
   const [code, setCode] = useState(` function sum(){
-  return 1 + 1}`);
+  return 2 + 1}`);
 
 const [review, setReview] = useState(``)
 
